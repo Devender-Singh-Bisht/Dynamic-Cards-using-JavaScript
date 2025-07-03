@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Cards</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 70vh;
+            width: 90vw;
+            margin: auto;
+            border: 2px solid black;
+            margin-top: 100px;
+            overflow: auto;
+        }
+
+        .box {
+            display: flex;
+            gap: 20px;
+            height: 17vh;
+            padding: 10px;
+            background-color: rgb(54, 53, 53);
+            color: white;
+        }
+
+        .box-left {
+            position: relative;
+            width: 16%;
+        }
+
+        .box-left img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+
+        .box-left span {
+            position: absolute;
+            right: 8%;
+            bottom: 8%;
+            padding: 3px;
+            border-radius: 5px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.795);
+        }
+
+        .box-right h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .sub-headers {
+            display: flex;
+            gap: 25px;
+            font-size: 14px;
+        }
+
+        .sub-headers ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            gap: 25px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
